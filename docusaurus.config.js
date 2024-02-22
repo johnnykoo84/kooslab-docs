@@ -82,11 +82,11 @@ const config = {
             label: "디지털 핸드북",
           },
           { to: "/blog", label: "블로그", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          // {
+          //   href: "https://github.com/facebook/docusaurus",
+          //   label: "GitHub",
+          //   position: "right",
+          // },
         ],
       },
       footer: {

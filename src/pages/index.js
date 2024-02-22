@@ -22,7 +22,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            📘 쿠스랩 디지털 핸드북이 궁금하신가요? 📘
           </Link>
         </div>
       </div>
