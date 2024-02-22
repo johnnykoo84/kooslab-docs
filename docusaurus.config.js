@@ -37,6 +37,7 @@ const config = {
 
   customFields: {
     // Used for publishing and more
+    companyName: "Kooslab",
     // tagline_02:
     //   "이후 쉽게 운영 유지 개선하실 수 있도록 매뉴얼 제공 및 교육을 제공해 드립니다.",
   },
