@@ -79,9 +79,9 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "디지털 핸드북",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "블로그", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
