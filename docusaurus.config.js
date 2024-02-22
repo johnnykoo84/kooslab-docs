@@ -8,9 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "기업고객의 문제를 해결해 드립니다.",
+  title: "어떤 IT 도구를 사용해야 하는지 고민이신가요?",
   tagline:
-    "수단과 방법을 가리지 않고, 기업 고객 문제를 해결해 드리고, 쉽게 운영 유지 개선하실 수 있도록 매뉴얼 제공 및 교육을 제공해 드립니다.",
+    "조직과 비즈니스 상황에 최적화된 도구로 조직 업무 프로세스 문제를 해결해 드립니다.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -33,6 +33,12 @@ const config = {
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
+  },
+
+  customFields: {
+    // Used for publishing and more
+    // tagline_02:
+    //   "이후 쉽게 운영 유지 개선하실 수 있도록 매뉴얼 제공 및 교육을 제공해 드립니다.",
   },
 
   presets: [
@@ -84,48 +90,48 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Kooslab`,
+        // links: [
+        //   {
+        //     title: "Docs",
+        //     items: [
+        //       {
+        //         label: "Tutorial",
+        //         to: "/docs/intro",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "Community",
+        //     items: [
+        //       {
+        //         label: "Stack Overflow",
+        //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
+        //       },
+        //       {
+        //         label: "Discord",
+        //         href: "https://discordapp.com/invite/docusaurus",
+        //       },
+        //       {
+        //         label: "Twitter",
+        //         href: "https://twitter.com/docusaurus",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "More",
+        //     items: [
+        //       {
+        //         label: "Blog",
+        //         to: "/blog",
+        //       },
+        //       {
+        //         label: "GitHub",
+        //         href: "https://github.com/facebook/docusaurus",
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `Copyright © 2024 쿠스랩(Kooslab) / 대표이사: 구일모 / 사업자등록번호: 199-36-01098 / Contact: johnnykoo@kooslab.net`,
       },
       prism: {
         theme: prismThemes.github,
