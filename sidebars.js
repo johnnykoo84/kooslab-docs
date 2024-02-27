@@ -37,7 +37,11 @@ const sidebars = {
 
       label: "조직 운영",
 
-      items: ["services/services", "services/change-process-tools"],
+      items: [
+        "services/services",
+        "services/change-process-tools",
+        "services/no-mid-leadership",
+      ],
     },
   ], // Added a closing bracket and a comma here
 };

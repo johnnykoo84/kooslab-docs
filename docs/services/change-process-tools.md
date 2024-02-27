@@ -1,7 +1,7 @@
 ---
 sidebar_label: "조직 내 도구와 프로세스 도입"
-
 sidebar_position: 2
+title: "새로운 도구 혹은 업무 프로세스 변화에서 주의해야 할 점"
 ---
 
 :::info
