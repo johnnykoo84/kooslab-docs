@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "어떤 IT 도구를 사용해야 하는지 고민이신가요?",
+  title: "어떤 IT 도구를 선택해야 할지 고민이신가요?",
   tagline:
     "조직과 비즈니스 상황에 최적화된 IT 시스템을 추천해서 조직 업무 프로세스 문제를 해결해 드립니다.",
   favicon: "img/favicon.ico",

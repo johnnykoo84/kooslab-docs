@@ -41,6 +41,7 @@ const sidebars = {
         "services/services",
         "services/change-process-tools",
         "services/no-mid-leadership",
+        "services/team-conflicts",
       ],
     },
   ], // Added a closing bracket and a comma here
