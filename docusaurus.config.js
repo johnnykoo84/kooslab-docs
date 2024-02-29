@@ -89,6 +89,28 @@ const config = {
           // },
         ],
       },
+      // Declare some <meta> tags
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "IT 도구, 생산성 향상, 조직 운영 컨설팅, 조직 업무 프로세스 세팅",
+        },
+        {
+          name: "description",
+          content:
+            "쿠스랩은 IT 도구 소개, 교육 콘텐츠 공유, 강의 및 컨설팅을 통해 조직의 업무 생산성을 향상시키는 서비스를 제공합니다.",
+        },
+        {
+          name: "og:title",
+          content: "쿠스랩 - 조직 업무 생산성을 개선해 보세요",
+        },
+        {
+          name: "og:description",
+          content:
+            "IT 도구를 통한 생산성 향상 방법을 배우고, 쿠스랩의 교육과 컨설팅으로 조직의 업무 효율을 높이세요.",
+        },
+      ],
       footer: {
         style: "dark",
         // links: [
