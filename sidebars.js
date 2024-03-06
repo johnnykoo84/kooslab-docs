@@ -56,6 +56,11 @@ const sidebars = {
         "services/leadership-training",
       ],
     },
+    {
+      type: "category",
+      label: "교육 서비스",
+      items: ["trainings/leadership-training"],
+    },
   ], // Added a closing bracket and a comma here
 };
 
