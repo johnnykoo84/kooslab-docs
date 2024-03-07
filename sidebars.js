@@ -61,6 +61,16 @@ const sidebars = {
       label: "교육 서비스",
       items: ["trainings/leadership-training"],
     },
+    {
+      type: "category",
+      label: "업무관리 솔루션",
+      items: ["task-management/intro"],
+    },
+    {
+      type: "category",
+      label: "스프레드시트",
+      items: ["spreadsheet/intro"],
+    },
   ], // Added a closing bracket and a comma here
 };
 
