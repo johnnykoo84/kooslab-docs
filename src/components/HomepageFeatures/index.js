@@ -18,20 +18,20 @@ const FeatureList = [
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        분석된 문제와 개선 계획에 가장 적합한 IT 도구들을 소개하고, 기능별 비교
-        테이블을 제공해 드립니다. 이후 조직에 맞는 도구를 선택하실 수 있도록
-        결정을 도와드립니다.
+        분석된 문제와 개선 계획에 가장 적합한 IT 도구 및 시스템을 소개하고,
+        기능별 비교 테이블을 제공해 드립니다. 이후 조직에 맞는 시스템을 선택하실
+        수 있도록 결정을 도와드립니다.
       </>
     ),
   },
   {
-    title: "조직 프로세스에 맞게 도구 세팅",
+    title: "조직 맞춤형 시스템 세팅",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        선택하신 도구를 개편 업무 프로세스에 맞게 직접 최적화 세팅을 진행해
-        드립니다. 이후 조직 내부에서 계속 운영해 나갈 수 있도록 매뉴얼 제공 및
-        교육을 제공해 드립니다.
+        개선된 업무 프로세스에 맞게 직접 도입된 새로운 시스템 및 도구 최적화
+        세팅을 진행해 드립니다. 이후 조직 내부에서 계속 운영해 나갈 수 있도록
+        매뉴얼 제공 및 교육 또한 제공해 드립니다.
       </>
     ),
   },
@@ -44,8 +44,8 @@ function Feature({ Svg, title, description }) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <Heading as="h1">{title}</Heading>
+        <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
   );
