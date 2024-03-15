@@ -63,13 +63,24 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "업무관리 솔루션",
-      items: ["task-management/intro"],
+      label: "솔루션 매뉴얼 모음",
+      items: [
+        {
+          type: "category",
+          label: "구글 스프레드시트",
+          items: ["manuals/spreadsheet/index"],
+        },
+        {
+          type: "category",
+          label: "업무 관리 솔루션",
+          items: ["manuals/task-management/index"],
+        },
+      ],
     },
     {
       type: "category",
-      label: "스프레드시트",
-      items: ["spreadsheet/intro"],
+      label: "솔루션 리뷰",
+      items: ["reviews/index", "reviews/flex"],
     },
   ], // Added a closing bracket and a comma here
 };
