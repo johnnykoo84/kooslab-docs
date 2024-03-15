@@ -1,12 +1,9 @@
 import React from "react";
 
-const Testimonial = ({ logo, testimonial, client }) => (
+const Testimonial = ({ logo, testimonial_1, testimonial_2, client }) => (
   <div
     style={{
-      border: "1px solid #ddd",
-      padding: "20px",
-      margin: "20px 0",
-      borderRadius: "5px",
+      margin: "10px 0",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -24,11 +21,20 @@ const Testimonial = ({ logo, testimonial, client }) => (
     <p
       style={{
         fontStyle: "italic",
-        marginTop: "20px",
+        marginTop: "5px",
         fontSize: "1.3em",
       }}
     >
-      "{testimonial}"
+      {testimonial_1}
+    </p>
+    <p
+      style={{
+        fontStyle: "italic",
+        marginTop: "5px",
+        fontSize: "1.3em",
+      }}
+    >
+      {testimonial_2}
     </p>
     <p
       style={{
