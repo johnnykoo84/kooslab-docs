@@ -37,7 +37,7 @@ const sidebars = {
     "about",
     {
       type: "category",
-      label: "고객 사례",
+      label: "고객 문제해결 사례",
       items: [
         {
           type: "doc",
