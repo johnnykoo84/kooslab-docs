@@ -79,5 +79,8 @@ wordpress form plugin 종류가 많은데요. 그 중에서 zendesk API 쪽에�
 
 :::info
 조직 내 시스템, 데이터 통합 및 연동의 문제를 가지고 계신가요?
+
+어떤 문제든 수단과 방법을 가리지 않고 해결해 드립니다.
+
 [**Kooslab 서비스 문의하기**](https://tally.so/r/mO5N4K)
 :::
