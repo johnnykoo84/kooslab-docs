@@ -154,7 +154,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `쿠스랩 | 대표이사: 구일모 | 주소: 서울시 서래로 2길 39, 501호 | 사업자등록번호: 199-36-01098 | 통신판매번호: 통신판매번호: 2024-서울서초-0845 | Contact: johnnykoo@kooslab.net`,
+        copyright: `쿠스랩 | 대표이사: 구일모 | 주소: 서울시 서래로 2길 39, 501호 | 사업자등록번호: 199-36-01098 | 통신판매번호: 2024-서울서초-0845 | Contact: johnnykoo@kooslab.net`,
       },
       prism: {
         theme: prismThemes.github,
