@@ -35,6 +35,7 @@ const sidebars = {
     //   dirName: ".", // generate sidebar structure from the docs folder (or versioned_docs/<version>)
     // },
     "about",
+    "pricing",
     {
       type: "category",
       label: "고객 문제해결 사례",
