@@ -81,7 +81,7 @@ const config = {
             position: "left",
             label: "디지털 핸드북",
           },
-          { to: "/blog", label: "블로그", position: "left" },
+          { to: "/blog", label: "고객 사례", position: "left" },
           // {
           //   href: "https://github.com/facebook/docusaurus",
           //   label: "GitHub",

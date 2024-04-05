@@ -38,16 +38,6 @@ const sidebars = {
     "pricing",
     {
       type: "category",
-      label: "고객 문제해결 사례",
-      items: [
-        {
-          type: "doc",
-          id: "customers/wordpress-zendesk",
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "조직 운영",
       items: [
         "services/services",
@@ -57,32 +47,23 @@ const sidebars = {
         "services/leadership-training",
       ],
     },
-    {
-      type: "category",
-      label: "교육 서비스",
-      items: ["trainings/leadership-training"],
-    },
-    {
-      type: "category",
-      label: "솔루션 매뉴얼 모음",
-      items: [
-        {
-          type: "category",
-          label: "구글 스프레드시트",
-          items: ["manuals/spreadsheet/index"],
-        },
-        {
-          type: "category",
-          label: "업무 관리 솔루션",
-          items: ["manuals/task-management/index"],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "솔루션 리뷰",
-      items: ["reviews/index", "reviews/flex"],
-    },
+
+    // {
+    //   type: "category",
+    //   label: "솔루션 매뉴얼 모음",
+    //   items: [
+    //     {
+    //       type: "category",
+    //       label: "구글 스프레드시트",
+    //       items: ["manuals/spreadsheet/index"],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "업무 관리 솔루션",
+    //       items: ["manuals/task-management/index"],
+    //     },
+    //   ],
+    // },
   ], // Added a closing bracket and a comma here
 };
 

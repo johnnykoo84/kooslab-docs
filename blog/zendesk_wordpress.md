@@ -1,7 +1,8 @@
 ---
-sidebar_label: "Zendesk - Wordpress 연동"
-sidebar_position: 1
-title: "Wordpress - Zendesk 연동(Integration)"
+slug: zendesk-wp-integration
+title: 젠데스크-워드프레스 연동 프로젝트
+authors: [koo]
+tags: [zendesk, wordpress, form]
 ---
 
 <img src='https://i.imgur.com/TeTZiOc.png' alt="wordpress logo" width="400" />

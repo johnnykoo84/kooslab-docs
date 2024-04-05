@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome
+title: 쿠스랩 블로그 입니다
 authors: [koo]
 tags: [blog]
 ---
