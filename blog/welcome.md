@@ -2,6 +2,7 @@
 slug: welcome
 title: 쿠스랩 블로그 입니다
 authors: [koo]
+date: 2023-03-01
 tags: [blog]
 ---
 

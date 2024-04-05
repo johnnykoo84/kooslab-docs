@@ -2,12 +2,15 @@
 slug: zendesk-wp-integration
 title: 젠데스크-워드프레스 연동 프로젝트
 authors: [koo]
+date: 2024-03-15
 tags: [zendesk, wordpress, form]
 ---
 
 <img src='https://i.imgur.com/TeTZiOc.png' alt="wordpress logo" width="400" />
 
 **Wordpress** 는 전 세계 콘텐츠 관리 시스템 (CMS) 시장의 64% 점유, 그리고 전체 웹페이지 시장으로 보면 43%를 점유하고 있는 전 세계에서 가장 많이 사용되고 있는 웹 혹은 CMS 시스템입니다. 고객은 워드프레스 기반의 랜딩페이지를 운영하고 있었고, 고객 문의 form 을 통해 방문자 고객을 리드 고객으로 전환하고 있었는데요.
+
+<!-- truncate -->
 
 <img src='/img/zendesk5610.jpg' alt="zendesk logo" width="400" />
 

@@ -52,6 +52,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
         },
         theme: {
           customCss: "./src/css/custom.css",
