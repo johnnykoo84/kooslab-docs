@@ -49,6 +49,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
+          exclude: ["**/reviews/*"],
         },
         blog: {
           showReadingTime: true,
