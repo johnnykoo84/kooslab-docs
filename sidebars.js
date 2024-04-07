@@ -45,6 +45,7 @@ const sidebars = {
         "services/no-mid-leadership",
         "services/team-conflicts",
         "services/leadership-training",
+        "services/task-visualization",
       ],
     },
 
