@@ -8,9 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "어떤 IT 도구를 선택해야 할지 고민이신가요?",
+  title: "회사 내 기술 문제들 언제까지 미루실건가요?",
   tagline:
-    "조직과 비즈니스 상황에 최적화된 IT 시스템을 추천해서 조직 업무 프로세스 문제를 해결해 드립니다.",
+    "노코드, 로우코드, 개발 등 수단과 방법을 가리지 않고 고객이 원하시는 방법으로 문제를 해결해 드립니다.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here

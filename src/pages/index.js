@@ -21,11 +21,8 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         {/* <p className="hero__subtitle">{siteConfig.customFields.tagline_02}</p> */}
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/about"
-          >
-            📘 쿠스랩 디지털 핸드북이 궁금하신가요? 📘
+          <Link className="button button--secondary button--lg" to="/blog">
+            어떤 문제들을 해결해드리고 있는지 궁금하시나요?
           </Link>
         </div>
       </div>
