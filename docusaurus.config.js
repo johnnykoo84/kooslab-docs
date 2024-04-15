@@ -8,13 +8,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "회사 내 기술 문제들 언제까지 미루실건가요?",
+  title: "회사 내부의 기술적 문제들, 고민이신가요?",
   tagline:
-    "노코드, 로우코드, 개발 등 수단과 방법을 가리지 않고 고객이 원하시는 방법으로 문제를 해결해 드립니다.",
-  favicon: "img/favicon.ico",
+    "비개발직군 담당자께서도 운영 가능한 솔루션으로 문제를 해결해 드립니다.",
+  favicon: "img/koala.png",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://kooslab.net",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -74,7 +74,7 @@ const config = {
         title: "Kooslab",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/koala.png",
         },
         items: [
           {

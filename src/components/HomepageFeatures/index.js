@@ -4,44 +4,46 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "조직 업무 프로세스 분석",
-    Svg: require("@site/static/img/investigate.svg").default,
+    title: "친절한 고객 요구사항 리뷰",
+    imgSrc: require("@site/static/img/checklist.png").default,
     description: (
       <>
-        현재 조직에서 어떻게 업무가 진행되고 있는지 분석하여 프로세스 리포트를
-        제공해 드립니다. 이후 리포트 기반으로 개선점을 제안해 드립니다.
+        현재 러프하게 가지고 계신 고객 요구사항 및 spec을 원하시는 목적에 맞게
+        자세히 검토해 드립니다. 이후 고객이 원하시는 방향으로 요구사항을
+        보완해드립니다. 완성된 요구사항 바탕으로 적절한 개발 기간과 비용 견적을
+        제공해드립니다.
       </>
     ),
   },
   {
-    title: "최적화 도구 소개, 비교, 선택",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "노코드, 로우코드 기술 활용",
+    imgSrc: require("@site/static/img/configure.png").default,
     description: (
       <>
-        분석된 문제와 개선 계획에 가장 적합한 IT 도구 및 시스템을 소개하고,
-        기능별 비교 테이블을 제공해 드립니다. 이후 조직에 맞는 시스템을 선택하실
-        수 있도록 결정을 도와드립니다.
+        프로젝트 종료 이후 비개발직군 고객 담당자께서 충분히 스스로 운영
+        가능하도록 가급적 노코드, 로우코드 솔루션으로 제안, 개발 진행해
+        드립니다. 꼭 필요한 부분에서만 직접 코드로 개발하거나 최소로 합니다.
       </>
     ),
   },
   {
-    title: "조직 맞춤형 시스템 세팅",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "적극적인 고객과의 소통",
+    imgSrc: require("@site/static/img/conversation.png").default,
     description: (
       <>
-        개선된 업무 프로세스에 맞게 직접 도입된 새로운 시스템 및 도구 최적화
-        세팅을 진행해 드립니다. 이후 조직 내부에서 계속 운영해 나갈 수 있도록
-        매뉴얼 제공 및 교육 또한 제공해 드립니다.
+        프로젝트 진행 중 고객과의 소통은 매우 중요합니다. 고객 요구사항을 정확히
+        이해하고, 고객이 원하는 방향으로 프로젝트를 이끌어 나갈 수 있도록
+        지나치다 싶을정도로 적극적으로 소통하고 확인합니다.
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ imgSrc, title, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imgSrc} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h1">{title}</Heading>

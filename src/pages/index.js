@@ -49,7 +49,9 @@ export default function Home() {
         }}
       >
         <div>
-          <h1 style={{ marginBottom: "2em" }}>서비스 종류 소개</h1>
+          <h1 style={{ marginBottom: "2em" }}>
+            쿠스랩은 어떤 서비스를 제공하나요?
+          </h1>
           {services.map((service) => (
             <ServiceIntro
               imgSrc={service.imgSrc}

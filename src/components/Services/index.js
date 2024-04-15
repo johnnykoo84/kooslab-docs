@@ -15,10 +15,10 @@ const ServiceIntro = ({ imgSrc, title, desc_1, desc_2 }) => {
         <img
           src={imgSrc}
           alt="Service image"
-          style={{ width: "70%", height: "auto" }}
+          style={{ width: "70%", height: "auto", padding: "2em" }}
         />
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} sm={6} style={{ padding: "2em" }}>
         <Typography variant="h4" align="left">
           {title}
         </Typography>
