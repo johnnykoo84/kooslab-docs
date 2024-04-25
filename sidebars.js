@@ -36,18 +36,6 @@ const sidebars = {
     // },
     "about",
     "pricing",
-    {
-      type: "category",
-      label: "조직 운영",
-      items: [
-        "services/services",
-        "services/change-process-tools",
-        "services/no-mid-leadership",
-        "services/team-conflicts",
-        "services/leadership-training",
-        "services/task-visualization",
-      ],
-    },
 
     // {
     //   type: "category",
