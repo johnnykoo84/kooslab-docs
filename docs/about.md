@@ -50,6 +50,13 @@ sidebar_position: 1
 
 # Kooslab 서비스 use case
 
+- 웹 개발
+  - 웹 프론트엔드, 백엔드, 클라우드 개발을 도와드립니다.
+  - 프론트엔드 기술: HTML, CSS, javascript, Typescript, React, Redux, React-Query, NextJS, jQuery 등을 사용합니다.
+  - 백엔드 기술: nodejs & Express, python & Flask, Sequelize, SQLAlchemy 등을 주로 사용합니다.
+  - 데이터베이스: MySQL, postgreSQL, mongoDB, supabase 등을 사용합니다.
+  - 클라우드: AWS를 주로 사용하지만 GCP, Azure 및 기타 manager service 모두 적용 가능합니다.
+  - 국내 결제 모듈: 포트원(아임포트) 결제연동서비스를 활용하여 국내 거의 모든 PG사 일회성 결제, 정기결제, 가상계좌입금, 간편결제등을 개발 구현해 드립니다.
 - 업무 자동화
   - 경영진 및 임직원 분들이 반복적으로 수행하는 업무 전반을 리뷰하고 현재와 근미래 업무에 맞게 커스텀 자동화를 도와드립니다. 자동화를 통해 대표님과 임직원 분들의 소중한 인적 시간을 더욱 중요한 업무에 사용하세요. e.g. 고객 계약 및 전자서명 자동화 프로젝트
   - 계속 사람의 손으로 건드리는 데이터 및 기타 작업을 튼튼한 로직에 근거한 자동화를 통해 휴먼 에러(실수)를 원천적으롲 제거하세요.

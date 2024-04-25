@@ -81,7 +81,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "디지털 핸드북",
+            label: "서비스 소개",
           },
           { to: "/blog", label: "고객 사례", position: "left" },
           // {
