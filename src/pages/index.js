@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -32,7 +33,8 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const isMobile = window.innerWidth <= 600;
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const iframeStyle = isMobile
     ? {
@@ -43,9 +45,9 @@ export default function Home() {
         alignItems: "center",
       }
     : {
+        display: "flex",
         width: "100%",
         height: "500px",
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
       };
