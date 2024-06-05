@@ -21,3 +21,14 @@
   align-items: center;
   justify-content: center;
 }
+.myIframe iframe {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .myIframe iframe {
+    width: 380px;
+    height: 340px;
+  }
+}

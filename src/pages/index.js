@@ -32,6 +32,23 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const isMobile = window.innerWidth <= 600;
+
+  const iframeStyle = isMobile
+    ? {
+        width: "100%",
+        height: "200px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }
+    : {
+        width: "100%",
+        height: "500px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      };
   return (
     <Layout
       title={`${siteConfig.customFields.companyName}`}
@@ -76,6 +93,18 @@ export default function Home() {
             testimonial_2="의뢰 후 빠르게 솔루션 검토 및 회신을 주시고, 검토 중인 솔루션을 마치 침투하듯 확인해 주셨습니다."
             client="마인드로직 박미현 HR팀 Manager"
           />
+        </div>
+
+        <div style={iframeStyle}>
+          <iframe
+            src="https://slides.com/ilmokoo/code/embed"
+            title="Code"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style={{ width: "100%", height: "100%" }}
+          ></iframe>
         </div>
       </section>
     </Layout>
