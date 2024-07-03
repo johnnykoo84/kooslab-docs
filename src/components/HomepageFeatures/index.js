@@ -56,7 +56,7 @@ function Feature({ imgSrc, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className="flex">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

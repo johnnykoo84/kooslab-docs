@@ -14,15 +14,16 @@ import services from "../data/services.json";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className="hero hero--primary bg-blue-450 mb-8">
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className="text-6xl text-white mb-4">{siteConfig.title}</h1>
+        <p className="text-2xl text-white mb-4">{siteConfig.tagline}</p>
         {/* <p className="hero__subtitle">{siteConfig.customFields.tagline_02}</p> */}
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/blog">
+        <div className="flex justify-center">
+          <Link
+            className="bg-white text-blue-600 font-bold py-2 px-4 rounded-lg"
+            to="/blog"
+          >
             어떤 문제들을 해결해드리고 있는지 궁금하시나요?
           </Link>
         </div>
