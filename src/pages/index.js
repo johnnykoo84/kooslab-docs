@@ -1,33 +1,74 @@
-import clsx from "clsx";
+import { useEffect } from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import { useMediaQuery, useTheme } from "@mui/material";
 
-import Heading from "@theme/Heading";
-import styles from "./index.module.css";
 import Testimonial from "../components/Testimonals";
 import ServiceIntro from "../components/Services";
 import services from "../data/services.json";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  useEffect(() => {
+    const widgetScriptSrc = "https://tally.so/widgets/embed.js";
+
+    const load = () => {
+      // Load Tally embeds
+      if (typeof Tally !== "undefined") {
+        Tally.loadEmbeds();
+        return;
+      }
+
+      // Fallback if window.Tally is not available
+      document
+        .querySelectorAll("iframe[data-tally-src]:not([src])")
+        .forEach((iframeEl) => {
+          iframeEl.src = iframeEl.dataset.tallySrc;
+        });
+    };
+
+    // If Tally is already loaded, load the embeds
+    if (typeof Tally !== "undefined") {
+      load();
+      return;
+    }
+
+    // If the Tally widget script is not loaded yet, load it
+    if (document.querySelector(`script[src="${widgetScriptSrc}"]`) === null) {
+      const script = document.createElement("script");
+      script.src = widgetScriptSrc;
+      script.onload = load;
+      script.onerror = load;
+      document.body.appendChild(script);
+      return;
+    }
+  }, []);
   return (
-    <header className="bg-blue-500 p-8 mb-8">
+    <header className="bg-blue-500 p-8 sm:p-12 mb-8">
       <div className="text-center">
-        <h1 className="text-center text-6xl text-white mb-4">
-          {siteConfig.title}
+        <h1 className="text-center text-5xl sm:text-6xl text-white mb-4">
+          아웃소싱 개발
+        </h1>
+        <h1 className="text-center text-5xl sm:text-6xl text-white mb-4">
+          믿을만한 파트너
+        </h1>
+        <h1 className="text-center text-5xl sm:text-6xl text-white mb-4">
+          찾기 힘드시죠
         </h1>
 
-        <p className="text-2xl text-white mb-8">{siteConfig.tagline}</p>
+        <p className="text-2xl text-white mb-8">
+          적극적인 소통과 유연한 요구사항 반영으로 인하우스 팀처럼
+          개발해드립니다
+        </p>
         {/* <p className="hero__subtitle">{siteConfig.customFields.tagline_02}</p> */}
         <div className="flex justify-center mb-8">
           <Link
             className="bg-white text-blue-600 font-bold py-2 px-4 rounded-lg"
             to="/blog"
           >
-            어떤 문제들을 해결해드리고 있는지 궁금하시나요?
+            고객 사례 확인하기
           </Link>
         </div>
       </div>
@@ -37,24 +78,7 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const iframeStyle = isMobile
-    ? {
-        width: "100%",
-        height: "200px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }
-    : {
-        display: "flex",
-        width: "100%",
-        height: "500px",
-        justifyContent: "center",
-        alignItems: "center",
-      };
   return (
     <Layout
       title={`${siteConfig.customFields.companyName}`}
@@ -64,15 +88,9 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
-      <section
-        style={{
-          margin: "40px 0",
-          padding: "20px",
-          textAlign: "center",
-        }}
-      >
-        <div>
-          <h1 className="text-3xl text-bold">
+      <section className="my-10 py-5 sm:px-48 text-center">
+        <div className="mb-24">
+          <h1 className="text-3xl sm:text-5xl text-bold mb-12">
             쿠스랩은 어떤 서비스를 제공하나요?
           </h1>
           {services.map((service) => (
@@ -84,7 +102,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="">
+        <div className="mb-12 sm:mb-24">
           <h1 className="text-3xl font-bold mb-8">고객 서비스 이용 후기</h1>
           <Testimonial
             logo="/img/logo-myworkpspace.png"
@@ -101,7 +119,8 @@ export default function Home() {
           />
         </div>
 
-        <div style={iframeStyle}>
+        <div className="flex flex-col items-center mb-12">
+          <h1 className="text-4xl font-bold mb-4">쿠스랩 서비스 소개서</h1>
           <iframe
             src="https://slides.com/ilmokoo/code/embed"
             title="Code"
@@ -109,7 +128,21 @@ export default function Home() {
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen
-            style={{ width: "100%", height: "100%" }}
+            className="w-full sm:w-2/3 h-48 sm:h-96 p-2"
+          ></iframe>
+        </div>
+        <div className="flex flex-col items-center mb-8 border mx-auto p-4">
+          <h1 className="text-4xl font-bold mb-2 sm:mb-4">Contact Kooslab</h1>
+          <iframe
+            data-tally-src="https://tally.so/embed/waGeNy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="276"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Contact Kooslab"
+            className="w-full sm:w-2/3 p-8"
           ></iframe>
         </div>
       </section>

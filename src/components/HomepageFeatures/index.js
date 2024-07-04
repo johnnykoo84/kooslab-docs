@@ -42,11 +42,11 @@ const FeatureList = [
 
 function Feature({ imgSrc, title, description }) {
   return (
-    <div className="p-2">
-      <div className="flex justify-center ">
+    <div className="p-2 m-8">
+      <div className="flex justify-center">
         <img src={imgSrc} className="mx-auto max-w-48 mb-4" alt={title} />
       </div>
-      <div className="text-center max-w-60">
+      <div className="text-center max-w-64">
         <Heading as="h1" className="text-2xl font-bold mb-4">
           {title}
         </Heading>
@@ -59,7 +59,7 @@ function Feature({ imgSrc, title, description }) {
 export default function HomepageFeatures() {
   return (
     <section className="">
-      <div className="flex flex-wrap justify-around">
+      <div className="flex flex-wrap justify-center">
         {FeatureList.map((props, idx) => (
           <div key={idx} className="mx-4 my-2">
             <Feature {...props} />
