@@ -83,7 +83,7 @@ const config = {
             position: "left",
             label: "서비스 소개",
           },
-          { to: "/blog", label: "고객 사례", position: "left" },
+          { to: "/blog", label: "블로그", position: "left" },
           // {
           //   href: "https://github.com/facebook/docusaurus",
           //   label: "GitHub",
