@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "회사 내부의 기술적 문제들, 고민이신가요?",
+  title: "믿을만한 파트너사에게 기술 문제를 위임하세요",
   tagline:
     "비개발직군 담당자께서도 운영 가능한 솔루션으로 문제를 해결해 드립니다.",
   favicon: "img/koala.png",

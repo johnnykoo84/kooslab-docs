@@ -14,12 +14,15 @@ import services from "../data/services.json";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className="hero hero--primary bg-blue-450 mb-8">
-      <div className="container">
-        <h1 className="text-6xl text-white mb-4">{siteConfig.title}</h1>
-        <p className="text-2xl text-white mb-4">{siteConfig.tagline}</p>
+    <header className="bg-blue-500 p-8 mb-8">
+      <div className="text-center">
+        <h1 className="text-center text-6xl text-white mb-4">
+          {siteConfig.title}
+        </h1>
+
+        <p className="text-2xl text-white mb-8">{siteConfig.tagline}</p>
         {/* <p className="hero__subtitle">{siteConfig.customFields.tagline_02}</p> */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-8">
           <Link
             className="bg-white text-blue-600 font-bold py-2 px-4 rounded-lg"
             to="/blog"
@@ -69,7 +72,7 @@ export default function Home() {
         }}
       >
         <div>
-          <h1 style={{ marginBottom: "2em" }}>
+          <h1 className="text-3xl text-bold">
             쿠스랩은 어떤 서비스를 제공하나요?
           </h1>
           {services.map((service) => (
@@ -81,8 +84,8 @@ export default function Home() {
             />
           ))}
         </div>
-        <div style={{ marginTop: "2em" }}>
-          <h1>고객 서비스 이용 후기</h1>
+        <div className="">
+          <h1 className="text-3xl font-bold mb-8">고객 서비스 이용 후기</h1>
           <Testimonial
             logo="/img/logo-myworkpspace.png"
             testimonial_1="쿠스랩 시스템 통합 및 업무 프로세스 제안으로 업무 효율성이 크게 좋아졌습니다."

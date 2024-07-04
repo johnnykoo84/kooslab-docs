@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "친절한 고객 요구사항 리뷰",
+    title: "꼼꼼한 요구사항 리뷰",
     imgSrc: require("@site/static/img/checklist.png").default,
     description: (
       <>
@@ -16,7 +16,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "고객 시스템 내에서 문제 해결",
+    title: "고객이 익숙한 도구 활용",
     imgSrc: require("@site/static/img/configure.png").default,
     description: (
       <>
@@ -28,7 +28,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "적극적인 고객과의 소통",
+    title: "쉬운 언어로 자주 소통",
     imgSrc: require("@site/static/img/conversation.png").default,
     description: (
       <>
@@ -42,13 +42,15 @@ const FeatureList = [
 
 function Feature({ imgSrc, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <img src={imgSrc} className={styles.featureSvg} alt={title} />
+    <div className="p-2">
+      <div className="flex justify-center ">
+        <img src={imgSrc} className="mx-auto max-w-48 mb-4" alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h1">{title}</Heading>
-        <p className={styles.featureDescription}>{description}</p>
+      <div className="text-center max-w-60">
+        <Heading as="h1" className="text-2xl font-bold mb-4">
+          {title}
+        </Heading>
+        <p className="text-xl text-left">{description}</p>
       </div>
     </div>
   );
@@ -56,13 +58,13 @@ function Feature({ imgSrc, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className="flex">
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className="">
+      <div className="flex flex-wrap justify-around">
+        {FeatureList.map((props, idx) => (
+          <div key={idx} className="mx-4 my-2">
+            <Feature {...props} />
+          </div>
+        ))}
       </div>
     </section>
   );

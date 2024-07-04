@@ -1,50 +1,13 @@
 import React from "react";
 
 const Testimonial = ({ logo, testimonial_1, testimonial_2, client }) => (
-  <div
-    style={{
-      margin: "10px 0",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
-    <img
-      src={logo}
-      alt={`${client} logo`}
-      style={{
-        width: "300px",
-        height: "200px",
-        objectFit: "contain",
-      }}
-    />
-    <p
-      style={{
-        fontStyle: "italic",
-        marginTop: "5px",
-        fontSize: "1.3em",
-      }}
-    >
-      {testimonial_1}
-    </p>
-    <p
-      style={{
-        fontStyle: "italic",
-        marginTop: "5px",
-        fontSize: "1.3em",
-      }}
-    >
-      {testimonial_2}
-    </p>
-    <p
-      style={{
-        fontWeight: "bold",
-        marginTop: "10px",
-        fontSize: "1.5em",
-      }}
-    >
-      - {client}
-    </p>
+  <div className="flex flex-col items-center border mb-4 p-2">
+    <img src={logo} className="p-4 mb-2" alt={`${client} logo`} />
+    <div className="text-left text-gray-600 mb-2">
+      <p>{testimonial_1}</p>
+      <p>{testimonial_2}</p>
+    </div>
+    <p className="font-bold">- {client}</p>
   </div>
 );
 
