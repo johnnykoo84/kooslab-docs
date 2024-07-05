@@ -3,11 +3,11 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import { useMediaQuery, useTheme } from "@mui/material";
 
 import Testimonial from "../components/Testimonals";
 import ServiceIntro from "../components/Services";
 import services from "../data/services.json";
+import Customers from "../components/customers";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -103,6 +103,9 @@ export default function Home() {
               desc_2={service.desc_2}
             />
           ))}
+        </div>
+        <div className="mb-12">
+          <Customers />
         </div>
         <div className="mb-12 sm:mb-24">
           <h1 className="text-3xl font-bold mb-8">고객 서비스 이용 후기</h1>

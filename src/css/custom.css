@@ -7,6 +7,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: rgb(3 169 244);
