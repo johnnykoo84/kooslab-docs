@@ -1,9 +1,9 @@
-import Testimonial from "@site/src/components/Testimonals";
+import Testimonial from "@site/src/components/CustomerReview/TestimonialItem";
 
 export default function CustomerReview() {
   return (
-    <div className="mb-12 sm:mb-24">
-      <h1 className="text-3xl font-bold mb-8">고객 서비스 이용 후기</h1>
+    <div className="bg-primary text-white p-8 md:px-64 text-center mb-12 sm:mb-24">
+      <h1 className="text-3xl font-bold mb-8">고객사 리뷰</h1>
       <Testimonial
         logo="/img/logo-myworkpspace.png"
         testimonial_1="쿠스랩 시스템 통합 및 업무 프로세스 제안으로 업무 효율성이 크게 좋아졌습니다."

@@ -36,19 +36,23 @@ export default function Contact() {
     }
   }, []);
   return (
-    <div className="flex flex-col items-center mb-8 border mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-2 sm:mb-4">Contact Kooslab</h1>
-      <iframe
-        data-tally-src="https://tally.so/embed/waGeNy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        loading="lazy"
-        width="100%"
-        height="276"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Contact Kooslab"
-        className="w-full sm:w-2/3 p-8"
-      ></iframe>
+    <div className="px-8 md:px-96">
+      <div id="contact" className="flex flex-col items-center mb-8 border p-4">
+        <h1 className="text-4xl font-bold mb-2 sm:mb-4">
+          무료 컨설팅 신청하기
+        </h1>
+        <iframe
+          data-tally-src="https://tally.so/embed/waGeNy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="276"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Contact Kooslab"
+          className="w-full sm:w-2/3 p-8"
+        ></iframe>
+      </div>
     </div>
   );
 }

@@ -9,3 +9,11 @@
 
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+:root {
+  --ifm-footer-background-color: #242526; /* Updated to white */
+}
+
+footer {
+  background-color: var(--ifm-footer-background-color);
+  color: white !important; /* This applies the white color to text */
+}

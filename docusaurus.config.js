@@ -68,6 +68,7 @@ const config = {
       // color & theme configuration
       defaultMode: "light",
       disableSwitch: true,
+      respectPrefersColorScheme: false,
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
@@ -84,12 +85,8 @@ const config = {
             label: "서비스 소개",
           },
           { to: "/blog", label: "블로그", position: "left" },
-          // {
-          //   href: "https://github.com/facebook/docusaurus",
-          //   label: "GitHub",
-          //   position: "right",
-          // },
         ],
+        style: "dark",
       },
       // Declare some <meta> tags
       metadata: [
@@ -114,7 +111,7 @@ const config = {
         },
       ],
       footer: {
-        style: "dark",
+        // style: "dark",
         // links: [
         //   {
         //     title: "Docs",
