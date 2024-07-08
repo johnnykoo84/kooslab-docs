@@ -17,7 +17,7 @@ const Customers = ({ logos }) => {
 
   console.log("customers", customers);
   return (
-    <div className="carousel-container">
+    <div className="carousel-container mb-12">
       <Slider {...settings}>
         {customers.map((customer, index) => (
           <div key={index} className="flex items-center justify-center p-4">
