@@ -1,13 +1,13 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import Layout from "@theme/Layout";
-import Header from "@site/src/components/Header";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Services from "@site/src/components/Services";
-import Customers from "@site/src/components/Customers";
-import CustomerReview from "@site/src/components/CustomerReview";
-import SalesDeck from "@site/src/components/SalesDeck";
-import Contact from "@site/src/components/Contact";
+import Header from "@site/src/components/header";
+import Features from "@site/src/components/features";
+import Services from "@site/src/components/services";
+import Customers from "@site/src/components/customers";
+import Testimonials from "@site/src/components/testimonials";
+import SalesDeck from "@site/src/components/salesdeck";
+import Contact from "@site/src/components/contact";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -19,10 +19,10 @@ export default function Home() {
     >
       <Header />
       <main>
-        <HomepageFeatures />
+        <Features />
         <Services />
         <Customers />
-        <CustomerReview />
+        <Testimonials />
         <SalesDeck />
       </main>
       <Contact />

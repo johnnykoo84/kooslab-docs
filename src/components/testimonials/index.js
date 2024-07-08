@@ -1,6 +1,6 @@
-import Testimonial from "@site/src/components/CustomerReview/TestimonialItem";
+import Testimonial from "@site/src/components/testimonials/TestimonialItem";
 
-export default function CustomerReview() {
+export default function Testimonials() {
   return (
     <div className="bg-primary text-white p-8 md:px-64 text-center mb-12 sm:mb-24">
       <h1 className="text-3xl font-bold mb-8">고객사 리뷰</h1>

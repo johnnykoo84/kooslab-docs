@@ -1,5 +1,5 @@
 import Heading from "@theme/Heading";
-import Features from "@site/src/data/features";
+import featuresData from "@site/src/data/features";
 
 function Feature({ imgSrc, title, description }) {
   return (
@@ -12,7 +12,7 @@ function Feature({ imgSrc, title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function Features() {
   return (
     <section className="bg-primary p-8 md:p-24 text-white">
       <h1 className="text-4xl font-bold text-center mb-4">WHY 쿠스랩</h1>
@@ -26,7 +26,7 @@ export default function HomepageFeatures() {
           alt="profile"
         />
         <div className="md:w-1/2 flex flex-col justify-center">
-          {Features.map((props, idx) => (
+          {featuresData.map((props, idx) => (
             <div key={idx} className="mx-2 my-2">
               <Feature {...props} />
             </div>
