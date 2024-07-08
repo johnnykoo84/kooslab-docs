@@ -1,4 +1,4 @@
-import ServiceItem from "@site/src/components/Services/ServiceItem";
+import ServiceItem from "@site/src/components/services/ServiceItem";
 import services from "@site/src/data/services.json";
 
 export default function Services() {
