@@ -18,7 +18,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <Header />
-      <main>
+      <main className="w-full overflow-x-hidden">
         <Features />
         <Services />
         <Customers />
