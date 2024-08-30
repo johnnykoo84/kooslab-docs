@@ -6,7 +6,7 @@ import Features from "@site/src/components/features";
 import Services from "@site/src/components/services";
 import Customers from "@site/src/components/customers";
 import Testimonials from "@site/src/components/testimonials";
-import SalesDeck from "@site/src/components/salesdeck";
+// import SalesDeck from "@site/src/components/salesdeck";
 import Contact from "@site/src/components/contact";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <Services />
         <Customers />
         <Testimonials />
-        <SalesDeck />
+        {/* <SalesDeck /> */}
       </main>
       <Contact />
     </Layout>
