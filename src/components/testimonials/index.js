@@ -17,6 +17,13 @@ export default function Testimonials() {
         testimonial_2="의뢰 후 빠르게 솔루션 검토 및 회신을 주시고, 검토 중인 솔루션을 마치 침투하듯 확인해 주셨습니다."
         client="마인드로직 박미현 HR팀 Manager"
       />
+      <Testimonial
+        logo="/img/logo-bunnyrate.png"
+        testimonial_1="고객사의 요구사항을 명확히 이해하고 본질적인 문제 해결에 집중합니다."
+        testimonial_2="실무적으로 매일 반복해야 하는 업무에 대한 리소스를 크게 줄일 수 있어서 정말 만족스럽습니다. 휴먼에러 위험성이 있던 반복적 업무에 대해 신경 쓸 필요가 없어져서 업무 질 향상에도 큰 도움이 될 것 같습니다.
+협업 과정에서 피드백에 대한 즉각적이고 정확한 대응을 해주셔서 감사했습니다."
+        client="버니레이트 CEO 양원석 & 노해주 매니저"
+      />
     </div>
   );
 }
