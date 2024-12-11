@@ -2,9 +2,13 @@ import React from "react";
 
 const Testimonial = ({ logo, testimonial_1, testimonial_2, client }) => {
   return (
-    <div className="flex flex-col items-center border mb-4 p-2">
-      <img src={logo} className="bg-white p-4 mb-2" alt={`${client} logo`} />
-      <div className="text-left sm:px-36 mb-2">
+    <div className="min-w-[320px] w-[320px] flex-shrink-0 items-center mb-4 p-2">
+      <img
+        src={logo}
+        className="bg-white h-24 min-w-[300px] w-[300px] flex-shrink-0 p-4 mb-4"
+        alt={`${client} logo`}
+      />
+      <div className="text-left mb-2">
         <p>{testimonial_1}</p>
         <p>{testimonial_2}</p>
       </div>
